@@ -21,12 +21,7 @@ def plot_map(data: pd.DataFrame):
 
     st.title("Grid Lines of Germany")
     st.info("Move the slide bar to see the load changes across different periods")
-    data = pd.DataFrame({
-        "year": [2020, 2021,2022],
-        "load": [100,200,300],
-        "latitude": [54, 52, 50],
-        "longitude": [15, 8, 6]
-    })
+
     year_list = data["year"].to_list()
     year = st.slider("Select year",year_list[0],year_list[-1], key="load")
     st.map(data[data.year == year], zoom=5)
