@@ -6,22 +6,20 @@
 import pandas as pd
 import streamlit as st
 
-def plot_map(data: pd.DataFrame, config: dict):
+def plot_map(data: pd.DataFrame):
     """Plot the grid lines and data on Germany map.
 
     Parameters
     ----------
     data: pd.DataFrame
         Input table.
-    config : dict
-        A dictionary of config settings.
     """
     st.set_page_config(
         layout="wide",
-        page_title=config["layout"]["page_title"]
+        page_title="Germany-grid-line-viz"
     )
 
-    st.title(config["layout"]["chart_title"])
+    st.title("Grid Lines of Germany")
     st.info("Move the slide bar to see the load changes across different periods")
     data = pd.DataFrame({
         "year": [2020, 2021,2022],
