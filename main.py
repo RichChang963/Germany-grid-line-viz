@@ -1,3 +1,4 @@
+import pandas as pd
 from scripts.plot import plot_map
 
 if __name__ == "__main__":

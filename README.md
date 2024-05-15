@@ -10,7 +10,7 @@ The repository displays the grid lines data of Germany on the map via streamlit.
 
 ## Installation
 
-In order to install the application, _git_ , _conda_ and _mamba_ (Anaconda or miniconda) should be installed.  
+In order to install the application, _git_ , _conda_ and _mamba_ (Anaconda or miniconda) should be installed. 
 
 ```
 git clone https://github.com/RichChang963/Germany-grid-line-viz.git
