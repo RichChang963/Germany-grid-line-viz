@@ -10,4 +10,5 @@ dependencies:
   - yaml
   - pip:
       - streamlit==1.33.0
+      - PyYAML==6.0.1
 prefix: /home/sam/mambaforge/envs/st
